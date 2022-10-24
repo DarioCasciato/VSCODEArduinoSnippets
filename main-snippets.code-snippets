@@ -1,0 +1,170 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+
+
+	"Arduino pinMode Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "pinMode",
+		"body": [
+			"pinMode(${1:pinNumber}, ${2|INPUT,OUTPUT|});"
+		],
+		"description": "Defines a pin function of the Arduino"
+	}
+
+	"Arduino digitalWrite Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "digitalWrite",
+		"body": [
+			"digitalWrite(${1:pinNumber}, ${2|HIGH,LOW|});"
+		],
+		"description": "Writes to a digital pin of the Arduino"
+	}
+
+	"Arduino digitalRead Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "digitalRead",
+		"body": [
+			"digitalRead(${1:pinNumber});"
+		],
+		"description": "Reads a digital pin of the Arduino"
+	}
+
+	"Arduino analogRead Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "analogRead",
+		"body": [
+			"analogRead(${1:pinNumber});"
+		],
+		"description": "Reads a analog pin of the Arduino"
+	}
+
+	"Arduino analogWrite Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "analogWrite",
+		"body": [
+			"analogWrite(${1:pinNumber}, ${2:Value});"
+		],
+		"description": "Writes to a analog pin of the Arduino"
+	}
+
+	"Arduino noTone Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "noTone",
+		"body": [
+			"noTone(${1:pinNumber});"
+		],
+		"description": "Silences a Buzzer/Speaker on the defined digital Pin of the Arduino"
+	}
+
+	"Arduino tone Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "tone",
+		"body": [
+			"tone(${1:pinNumber}, ${1:Frequency});"
+		],
+		"description": "Plays a defined frequency to a Buzzer/Speaker on a defined digital Pin of the Arduino"
+	}
+
+	"Arduino delay Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "delay",
+		"body": [
+			"delay(${1:milliseconds});"
+		],
+		"description": "Delays the Arduino for a certain amount of milliseconds"
+	}
+
+	"Arduino delayMicroseconds Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "",
+		"body": [
+			"delayMicroseconds(${1:Microseconds});"
+		],
+		"description": "Delays the Arduino for a certain amount of microseconds"
+	}
+
+	"Arduino micros Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "micros",
+		"body": [
+			"micros();"
+		],
+		"description": "returns the amount of microseconds since the Arduino haas started up"
+	}
+
+	"Arduino millis Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "millis",
+		"body": [
+			"millis();"
+		],
+		"description": "returns the amount of milliseconds since the Arduino haas started up"
+	}
+
+	"Arduino map Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "map",
+		"body": [
+			"map(${1:Variable}, ${2:LowBefore}, ${3:HighBefore}, ${4:LowAfter}, ${5:HighAfter});"
+		],
+		"description": "Re-maps a number from one range to another"
+	}
+
+	"Arduino random Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "random",
+		"body": [
+			"random(${1:min}, ${1:max});"
+		],
+		"description": "The random function generates pseudo-random numbers"
+	}
+
+	"Arduino randomSeed Function":
+	{
+		"scope": "c,cpp",
+		"prefix": "randomSeed",
+		"body": [
+			"randomSeed(${1:Seed});"
+		],
+		"description": "randomSeed() initializes the pseudo-random number generator, causing it to start at an arbitrary point in its random sequence. This sequence, while very long, and random, is always the same."
+	}
+
+	"Arduino main code":
+	{
+		"scope": "c,cpp",
+		"prefix": "ARDUINO",
+		"body": [
+			"void setup()\n{\n\n}\n\n\nvoid loop()\n{\n\n}\n"
+		],
+		"description": "Creates the basic Arduino structure"
+	}
+}
