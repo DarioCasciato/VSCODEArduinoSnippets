@@ -83,7 +83,7 @@
 		"scope": "c,cpp",
 		"prefix": "tone",
 		"body": [
-			"tone(${1:pinNumber}, ${1:Frequency});"
+			"tone(${1:pinNumber}, ${2:Frequency});"
 		],
 		"description": "Plays a defined frequency to a Buzzer/Speaker on a defined digital Pin of the Arduino"
 	}
